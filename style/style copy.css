@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+:root {
+    --cor3: #153308;
+    --cor1: #264518;
+    --cor2: #527842;
+    --cor3: #8DAB80;
+    --cor4: #C6DEBC;
+    --cor5: #d7e6d7;
+    --transparete: #ffffff00;
+
+    --fonte-padrao: Arial,Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'idroid', cursive;
+    --tamanho-fonte: 16px;
+  }
+  @font-face{
+    font-family: idroid;
+    src: url("/fontes/idroid.otf") format('opentype');
+    font-weight: normal;
+    }
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    /* min-width: 300px;
+    max-width: 1000px; */
+    font-family:var(--fonte-padrao);
+    background-color:var(--cor5);
+    margin: auto;
+}
+
+header{
+    font-family: var(--fonte-destaque);
+    background-color: var(--cor3);
+    /* min-width: 150px;
+    max-width: 1200px; */
+    margin: auto;
+    padding: 10px;
+    color: white;
+    height: 150px;
+}
+header >h1{
+    /* font-family: var(--fonte-destaque); */
+    text-align: center;
+    margin-bottom: 0px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.815);
+}
+header >p{
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    text-align: center;
+    margin: auto;
+    max-width: 500px;
+    text-shadow: 1px 1px 10px rgb(0, 0, 0);
+}
+.fixed{
+    position: fixed;
+    width:100%;
+    /* max-width: 1000px; */
+    z-index: 1000;
+    top: 0;
+}
+.navbar-inverse{
+    background-color: var(--cor2);
+    margin: auto;
+    border: none;
+    border-radius: 0px;
+    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.432); */
+}
+.navbar-inverse .navbar-nav>li>a:hover{
+    background-color: var(--cor2);
+    border-radius: 5px;
+    transition-duration: 1s;
+}
+.navbar-inverse .navbar-brand{
+    color: white;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+    background-color: #8DAB80;
+    color: rgb(255, 255, 255);
+    border-radius: 0px 0px 30px 30px;
+}
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
+    background-color:var(--cor2);
+    color: rgb(0, 0, 0);
+}
+.dropdown-menu>li>a,
+.navbar-nav>li>.dropdown-menu{
+    background-color: var(--cor2);
+}
+.dropdown-menu>li>a:hover{
+    background-color:var(--cor2);
+}
+
+.navbar-inverse  .navbar-nav>li>a{
+    color: white;
+}
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 0px 10px #00000070;
+}
+main article h1, h2{
+    padding: 3px;
+    padding-left: 10px;
+    border-radius: 5px;
+    font-family:var(--fonte-android);
+    background-image: linear-gradient(90deg,var(--cor2),#ffffff);
+    color: var(--cor-padrao);
+}
+main p{
+    text-align:justify;
+    text-indent: 1.5em;
+    margin: 15px 0px;
+    font-size: 1em;
+    line-height: 2em;
+}
+main strong{
+    color: var(--cor3);
+    font-weight: bold;
+    padding: 2px 6px;
+}
+main a{
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--cor3);
+    background-color: var(--cor4);
+    padding: 2px 6px;
+}
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor1);
+}
+main img{
+    align-items: center;
+    width: 100%;
+}
+main img.droids{
+    display: block;
+    margin: auto;
+    max-width: 350px;
+}
+main img.pequena{
+    display: block;
+    margin: auto;
+    max-width: 350px;
+}
+div.video{
+    background-color: var(--cor3);
+    margin: 0px -20px 30px -20px;
+    padding-bottom: 59%;
+    position: relative;
+}
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+article aside{
+    background-color: var(--cor4);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.418);
+}
+article aside p{
+    padding: 10px;
+    margin: 0px;
+    
+}
+article aside > h3{
+    background-color: var(--cor3);
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: -10px -10px 0px -10px;
+}
+aside ul{
+    list-style-position: inside;
+    columns: 2;
+}
+footer{
+    background-color:var(--cor3);
+    color: white;
+    text-align: center;
+    padding: 7px;
+    margin: 0px;
+}
+footer a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor1);
+}
