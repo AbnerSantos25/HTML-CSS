@@ -59,20 +59,10 @@ header >p{
     max-width: 600px;
     text-shadow: 1px 1px 10px rgb(0, 0, 0);
 }
-.fixed{
-    position: fixed;
-    width:100%;
-    /* max-width: 1000px; */
-    z-index: 1000;
-    top: 0;
-}
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    .fixed{
-        position: static;
-    }
-}
+
 .navbar-inverse{
+    position: sticky;
+    top: 0px;
     background-color: var(--cor2);
     margin: auto;
     border: none;
