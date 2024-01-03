@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root{
     --font2: Sriracha, Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -6,9 +7,9 @@
     src: url(font/PassionOne-Bold.otf);
 }
 
-body{
-    height: 96vh;
-    background-color: antiquewhite;
+html, body{
+    min-height: 100vh;
+    background-color: rgb(134, 134, 133);
 }
 *{
     padding: 0px;
@@ -19,23 +20,22 @@ body{
 header {
     background-color: black;
     color: white;
-    align-items: center;
+    text-align: center;
 }
 header >h1{
     font-family: PassionOne-Bold, Ganeva, Tahoma, sans-serif;
     font-variant: small-caps;
     font-size: 10vw;
-    text-align: center;
     padding-top: 50px;
+}
+header >P{
+    padding-bottom: 50px;
 }
 header >a{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display:flex;
     font-size: 1em;
     text-decoration: none;
     color: white;
-    justify-content: center;
-    padding-bottom: 50px;
 }
 /* main--------------- */
 main{
