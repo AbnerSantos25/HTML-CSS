@@ -1,3 +1,6 @@
+:root{
+    --font2: Sriracha, Verdana, Geneva, Tahoma, sans-serif;
+}
 
 body{
     height: 96vh;
@@ -6,36 +9,68 @@ body{
 *{
     padding: 0px;
     margin: 0px;
+    font-size: 1em;
 }
+/* header--------------- */
 header {
     background-color: black;
     color: white;
-    /* height: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; */
-    padding: 10px; /* Você pode ajustar isso conforme necessário */
+    align-items: center;
 }
 header >h1{
-    font-family: Verdana, Ganeva, Tahoma, sans-serif;
-    font-size: 5vw;
+    font-family: Passion One, Ganeva, Tahoma, sans-serif;
+    font-weight:lighter;
+    font-size: 10vw;
     text-align: center;
+    padding-top: 50px;
 }
 header >a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     display:flex;
     text-decoration: none;
     color: white;
     justify-content: center;
-    font-size: 2vw;
+    padding-bottom: 50px;
 }
+/* main--------------- */
 main{
     background-color: white;
 }
-
-#paragrafo1{
-    background-color: white;
-    padding: 40px 20px 40px 20px;
-    font-size: 4vw;
-    color: blue;
+/* section--------------- */
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    font-size: 3em;
 }
+section .paragrafo{
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+section.imagem{
+    padding: 20px;
+    height: 500px;
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom right;
+}
+section#img1{
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+}
+
+section.paragrafo p{
+    font-family: var(--font2);
+    padding: 50px 20px 50px 20px;
+}
+section.imagem p{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.514);
+    font-family: var(--font2);
+    padding: 5px;
+}
+
