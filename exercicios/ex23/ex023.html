@@ -8,19 +8,31 @@
         body{
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
+
         table{
+
             width: 400px;
             border-collapse: collapse;
+            margin-bottom: 5px;
         }
-        td{
+
+        td, th{
             border: 1px solid black;
             padding: 8px;
+            text-align: center; /*alinhamento horizontal*/
+            vertical-align: middle; /*alinhamento vertical (middle - meio)*/
+        }    
+
+        .numero{
+            text-align: right;
         }
-        
+        thead, tfoot{
+            background-color: blanchedalmond;
+        }
     </style>
 </head>
 <body>
-    <h1>TABELA</h1>
+    <h1>TABELA SIMPLES</h1>
     <!-- HIERARQUIA DE TABELAS (SIMPLES)
     TABLE = TABELA
         TABLE ROW = LINHA DE TABELA
@@ -47,6 +59,103 @@
             <td>b4</td>
             <td>c4</td>
         </tr>
+    </table>
+    <h1>TABELA AVANÇADA</h1>
+    <table>
+        <thead>
+            <th>Estado</th>
+            <th>População</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>são paulo</td>
+                <td>455 555 105</td>
+            </tr>
+            <tr>
+                <td>minas geris</td>
+                <td>554 555 555</td>
+            </tr>
+            <tr>
+                <td>são paulo</td>
+                <td>455 555 105</td>
+            </tr>
+            <tr>
+                <td>minas geris</td>
+                <td>554 555 555</td>
+            </tr>
+            <tr>
+                <td>são paulo</td>
+                <td>455 555 105</td>
+            </tr>
+            <tr>
+                <td>minas geris</td>
+                <td>554 555 555</td>
+            </tr>
+            <tr>
+                <td>são paulo</td>
+                <td>455 555 105</td>
+            </tr>
+            <tr>
+                <td>minas geris</td>
+                <td>554 555 555</td>
+            </tr>
+            <tr>
+                <td>são paulo</td>
+                <td>455 555 105</td>
+            </tr>
+            <tr>
+                <td>minas geris</td>
+                <td>554 555 555</td>
+            </tr>
+            <tr>
+                <td>são paulo</td>
+                <td>455 555 105</td>
+            </tr>
+            <tr>
+                <td>minas geris</td>
+                <td>554 555 555</td>
+            </tr>
+            <tr>
+                <td>são paulo</td>
+                <td>455 555 105</td>
+            </tr>
+            <tr>
+                <td>minas geris</td>
+                <td>554 555 555</td>
+            </tr>
+            <tr>
+                <td>são paulo</td>
+                <td>455 555 105</td>
+            </tr>
+            <tr>
+                <td>minas geris</td>
+                <td>554 555 555</td>
+            </tr>
+            <tr>
+                <td>minas geris</td>
+                <td>554 555 555</td>
+            </tr>
+            <tr>
+                <td>são paulo</td>
+                <td>455 555 105</td>
+            </tr>
+            <tr>
+                <td>minas geris</td>
+                <td>554 555 555</td>
+            </tr>
+            <tr>
+                <td>são paulo</td>
+                <td>455 555 105</td>
+            </tr>
+            <tr>
+                <td>minas geris</td>
+                <td>554 555 555</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th>Total de abitantes</th>
+            <td><strong>000000</strong></td>
+        </tfoot>
     </table>
 </body>
 </html>
