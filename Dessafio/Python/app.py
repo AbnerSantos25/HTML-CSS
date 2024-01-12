@@ -3,6 +3,7 @@ import openpyxl
 import pyperclip
 import pyautogui
 from time import sleep
+from selenium import webdriver
 # passos:
 #  Entrar na planilha
 workbook = openpyxl.load_workbook(
@@ -18,10 +19,10 @@ for linha in sheet_produtos.iter_rows(min_row=1):
 # 3 - colar o que foi copiado da tabela.
     pyautogui.hotkey('ctrl', 'v')
 # 3 - Clicar em pesquisar
-    pyautogui.click(1331,624, duration=2)
+    pyautogui.click(1331, 624, duration=2)
     sleep(2)
 # 5- clicar no vinculos do usuario(desenho)
-    pyautogui.click(1293, 734, duration=2)
+    pyautogui.click(1318, 733, duration=2)
 # 6 - esperar 3 segundos
     sleep(2)
 # 7 - Clicar em "CODIGO ERP" pra colocar os que possui ERP para as primeiras linhas;
