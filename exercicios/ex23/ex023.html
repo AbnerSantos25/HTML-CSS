@@ -10,24 +10,37 @@
         }
 
         table{
-
             width: 400px;
             border-collapse: collapse;
             margin-bottom: 5px;
+            position: relative;
         }
-
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: rgb(9, 77, 99);
+            padding: 5px;
+        }
         td, th{
             border: 1px solid black;
             padding: 8px;
             text-align: center; /*alinhamento horizontal*/
             vertical-align: middle; /*alinhamento vertical (middle - meio)*/
-        }    
+        }
+        tr:nth-child(2n){ /*odd ou even*/
+            background-color: rgb(216, 223, 226);
+        }
 
         .numero{
             text-align: right;
         }
         thead, tfoot{
-            background-color: blanchedalmond;
+            background-color: rgb(11, 97, 125);
+        }
+        thead> tr> th{
+            position: sticky;
+            top: 0;
+            background-color: rgb(9, 77, 99);;
         }
     </style>
 </head>
@@ -39,6 +52,7 @@
             TABLE GEADER = CABEÇALHO DE TABELA
             TABLE DATA = DADO DA TABELA -->
     <table>
+        <caption>Brasil</caption>
         <tr><!--primeira linha-->
             <td>a1</td>
             <td>b1</td>
@@ -62,9 +76,12 @@
     </table>
     <h1>TABELA AVANÇADA</h1>
     <table>
+        <caption>Brasil</caption>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
         </thead>
         <tbody>
             <tr>
@@ -153,7 +170,7 @@
             </tr>
         </tbody>
         <tfoot>
-            <th>Total de abitantes</th>
+            <th scope="row">Total de abitantes</th>
             <td><strong>000000</strong></td>
         </tfoot>
     </table>

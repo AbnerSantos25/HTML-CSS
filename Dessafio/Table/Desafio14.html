@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 14</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+        th, td{
+            text-align: center;
+            border: 1px solid black;
+        }
+        thead> tr> th, tfoot{
+            background-color: lightsteelblue;
+        }
+        tr.media{
+            background-color: lightsteelblue;
+        }
+    </style>    
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th scope="rowgroup" rowspan="2">Area</th>
+                <th scope="rowgroup" rowspan="2">Disciplinas</th>
+                <th scope="row" colspan="2">Notas</th>
+                <th scope="rowgroup" rowspan="2">Media</th>
+            </tr>
+            <tr>
+                <th scope="rowgroup">Nota1</th>
+                <th scope="rowgroup">Nota2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="colgroup" rowspan="4">Exatas</th>
+                <td>Matematica</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Matematica</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Matematica</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Matematica</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr  class="media">
+                <th scope="col" colspan="4">
+                    Media exatas
+                </th>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th scope="colgroup" rowspan="2">Humanas</th>
+                <td>Historia</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="col" colspan="4">Media de Humanas</th>
+                <td>0.0</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
