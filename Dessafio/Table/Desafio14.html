@@ -1,33 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio 14</title>
     <style>
-        table{
+        table {
             border-collapse: collapse;
-            width: 500px;
+            width: 95vw;
+            height: 70vh;
         }
-        th, td{
+
+        th,
+        td {
             text-align: center;
             border: 1px solid black;
         }
-        thead> tr> th, tfoot{
+
+        thead>tr>th,
+        tfoot {
             background-color: lightsteelblue;
         }
-        tr.media{
+
+        tr.media {
             background-color: lightsteelblue;
         }
-        col.cNotas{
+
+        col.cNotas {
             background-color: aquamarine;
         }
-        #container{
+
+        #container {
             /* pra fazer a rolagem apenas da tabela e nao de todo o conteudo (caso a tabela seja mt grande) */
             overflow-x: auto;
         }
-    </style>    
+    </style>
 </head>
+
 <body>
     <div id="container">
         <table>
@@ -75,7 +85,7 @@
                     <td>0</td>
                     <td>0</td>
                 </tr>
-                <tr  class="media">
+                <tr class="media">
                     <th scope="col" colspan="4">
                         Media exatas
                     </th>
@@ -104,4 +114,5 @@
         </table>
     </div>
 </body>
+
 </html>
