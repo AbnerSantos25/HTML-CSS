@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            margin-bottom: 5px;
+            position: relative;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: rgb(9, 77, 99);
+            padding: 5px;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center; /*alinhamento horizontal*/
+            vertical-align: middle; /*alinhamento vertical (middle - meio)*/
+        }
+        tr:nth-child(2n){ /*odd ou even*/
+            background-color: rgb(216, 223, 226);
+        }
+
+        .numero{
+            text-align: right;
+        }
+        thead, tfoot{
+            background-color: rgb(11, 97, 125);
+        }
+        thead> tr> th{
+            position: sticky;
+            top: 0;
+            background-color: rgb(9, 77, 99);;
+        }
+    </style>
+</head>
+<body>
+    <h1>TABELA SIMPLES</h1>
+    <!-- HIERARQUIA DE TABELAS (SIMPLES)
+    TABLE = TABELA
+        TABLE ROW = LINHA DE TABELA
+            TABLE GEADER = CABEÇALHO DE TABELA
+            TABLE DATA = DADO DA TABELA -->
+    <table>
+        <caption>Brasil</caption>
+        <tr><!--primeira linha-->
+            <td>a1</td>
+            <td>b1</td>
+            <td>c1</td>
+        </tr>
+        <tr><!--segunda linha-->
+            <td>a2</td>
+            <td>b2</td>
+            <td>c2</td>
+        </tr>
+        <tr><!--terceira linha-->
+            <td>a3</td>
+            <td>b3</td>
+            <td>c3</td>
+        </tr>
+        <tr><!--quarta linha-->
+            <td>a4</td>
+            <td>b4</td>
+            <td>c4</td>
+        </tr>
+    </table>
+    <h1>TABELA AVANÇADA</h1>
+    <table>
+        <caption>Brasil</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>são paulo</td>
+                <td>455 555 105</td>
+            </tr>
+            <tr>
+                <td>minas geris</td>
+                <td>554 555 555</td>
+            </tr>
+            <tr>
+                <td>são paulo</td>
+                <td>455 555 105</td>
+            </tr>
+            <tr>
+                <td>minas geris</td>
+                <td>554 555 555</td>
+            </tr>
+            <tr>
+                <td>são paulo</td>
+                <td>455 555 105</td>
+            </tr>
+            <tr>
+                <td>minas geris</td>
+                <td>554 555 555</td>
+            </tr>
+            <tr>
+                <td>são paulo</td>
+                <td>455 555 105</td>
+            </tr>
+            <tr>
+                <td>minas geris</td>
+                <td>554 555 555</td>
+            </tr>
+            <tr>
+                <td>são paulo</td>
+                <td>455 555 105</td>
+            </tr>
+            <tr>
+                <td>minas geris</td>
+                <td>554 555 555</td>
+            </tr>
+            <tr>
+                <td>são paulo</td>
+                <td>455 555 105</td>
+            </tr>
+            <tr>
+                <td>minas geris</td>
+                <td>554 555 555</td>
+            </tr>
+            <tr>
+                <td>são paulo</td>
+                <td>455 555 105</td>
+            </tr>
+            <tr>
+                <td>minas geris</td>
+                <td>554 555 555</td>
+            </tr>
+            <tr>
+                <td>são paulo</td>
+                <td>455 555 105</td>
+            </tr>
+            <tr>
+                <td>minas geris</td>
+                <td>554 555 555</td>
+            </tr>
+            <tr>
+                <td>minas geris</td>
+                <td>554 555 555</td>
+            </tr>
+            <tr>
+                <td>são paulo</td>
+                <td>455 555 105</td>
+            </tr>
+            <tr>
+                <td>minas geris</td>
+                <td>554 555 555</td>
+            </tr>
+            <tr>
+                <td>são paulo</td>
+                <td>455 555 105</td>
+            </tr>
+            <tr>
+                <td>minas geris</td>
+                <td>554 555 555</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">Total de abitantes</th>
+            <td><strong>000000</strong></td>
+        </tfoot>
+    </table>
+</body>
+</html>
