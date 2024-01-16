@@ -7,3 +7,4 @@ Onde agregará muito na minha carreira profissional.
 <a href="./Dessafio/Site Android/GROUPING_TAGS copy.html" target="_blank"> Desafio Android </a><br>
 <a href="./Dessafio/Site Cordeal/cordeal.html" target="_blank">Desafio Cordeal</a><br>
 <a href="./exercicios/ex24/iframe.html" target="_blank">Ifreme</a><br>
+<a href="../Projeto-Social/index.html" target="_blank">Projeto Rede Social</a><br>
