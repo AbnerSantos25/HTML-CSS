@@ -157,10 +157,19 @@
                     <label for="idataprova">Data da Prova</label><br>
                     <input type="date" name="dataprova" id="idataprova">
                 </div>
-                <div>
-                    <label for="icolor">Cor:</label>
-                    <input type="color" name="color" id="icolor">
-                </div>
+                <fieldset>
+                    <legend>Tipo de Prova</legend>
+                    <div>
+                        <label for="iIntensidade">Intensidade</label>
+                        <input type="range" name="intensidade" value="0" id="iIntensidade" min="0" max="10"
+                            oninput="res.innerHTML = Number(iIntensidade.value)">
+                        <output id="res">0</output>
+                    </div>
+                    <div>
+                        <label for="icolor">Cor:</label>
+                        <input type="color" name="color" id="icolor">
+                    </div>
+                </fieldset>
             </fieldset>
             <div id="botao">
                 <input type="submit" value="Enviar">
