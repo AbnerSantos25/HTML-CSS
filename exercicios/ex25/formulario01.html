@@ -65,6 +65,23 @@
                         pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required>
                 </div>
                 <div>
+                    <fieldset>
+                        <legend>Genero</legend>
+                        <input type="radio" name="Genero" id="imas">
+                        <label for="imas">Masculino</label>
+                        <input type="radio" name="Genero" id="ifem">
+                        <label for="ifem">Feminino</label>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Possui TDHA?</legend>
+                        <input type="checkbox" name="sim" id="isim"><label for="isim">SIM</label>
+                        <input type="checkbox" name="nao" id="inao"><label for="inao">NÃO</label>
+                        <input type="checkbox" name="naoSei" id="inaoSei"><label for="inaoSei">NÃO SEI</label>
+                    </fieldset>
+                </div>
+                <div>
                     <label for="isenha">Senha:</label><br>
                     <input type="password" name="senha" id="isenha" required minlength="8" maxlength="16">
                 </div>
