@@ -11,8 +11,9 @@
         }
 
         form {
-            width: 280px;
+            width: 320px;
             padding: 10px;
+            background-image: linear-gradient(180deg, #829992, #fff3);
         }
 
         form div {
@@ -38,6 +39,14 @@
         div#botao>input {
             margin-right: 5px;
         }
+
+        #isenha {
+            margin-bottom: 5px;
+        }
+
+        .w100 {
+            width: 100%;
+        }
     </style>
 </head>
 
@@ -49,19 +58,20 @@
                 <legend>Dados Pessoais</legend>
                 <div>
                     <label for="inome">Nome: </label><br>
-                    <input type="text" name="nome" id="inome" required autocomplete="username">
+                    <input class="w100" type="text" name="nome" id="inome" required autocomplete="username">
                 </div>
                 <div>
                     <label for="isobrenome">Sobrenome:</label><br>
-                    <input type="text" name="sobrenome" id="isobrenome" required>
+                    <input class="w100" type="text" name="sobrenome" id="isobrenome" required>
                 </div>
                 <div>
                     <label for="iemail">E-mail: </label><br>
-                    <input type="email" name="cpf" id="iemail" autocomplete="email" placeholder="exemplo@gmail.com">
+                    <input class="w100" type="email" name="cpf" id="iemail" autocomplete="email"
+                        placeholder="exemplo@gmail.com">
                 </div>
                 <div>
-                    <label for="itelefone">Telefone: </label>
-                    <input type="tel" name="telefone" id="itelefone" autocomplete="tel"
+                    <label for="itelefone">Telefone: </label><br>
+                    <input class="w100" type="tel" name="telefone" id="itelefone" autocomplete="tel"
                         pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required>
                 </div>
                 <div>
@@ -76,14 +86,61 @@
                 <div>
                     <fieldset>
                         <legend>Possui TDHA?</legend>
-                        <input type="checkbox" name="sim" id="isim"><label for="isim">SIM</label>
-                        <input type="checkbox" name="nao" id="inao"><label for="inao">NÃO</label>
-                        <input type="checkbox" name="naoSei" id="inaoSei"><label for="inaoSei">NÃO SEI</label>
+                        <input type="checkbox" name="sim" id="isim"><label for="isim">Sim</label>
+                        <input type="checkbox" name="nao" id="inao"><label for="inao">Não</label>
+                        <input type="checkbox" name="naoSei" id="inaoSei"><label for="inaoSei">Não sei</label>
                     </fieldset>
                 </div>
                 <div>
+                    <label for="ifoto">Foto de Perfil</label>
+                    <input type="file" name="foto" id="ifoto">
+                </div>
+                <div>
                     <label for="isenha">Senha:</label><br>
-                    <input type="password" name="senha" id="isenha" required minlength="8" maxlength="16">
+                    <input class="w100" type="password" name="senha" id="isenha" required minlength="8"
+                        maxlength="16"><br>
+                    <label for="isenhaConf">Confirmar Senha:</label><br>
+                    <input class="w100" type="password" name="senhaConf" id="isenhaConf" required minlength="8"
+                        maxlength="16">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Endereço</legend>
+                <div>
+                    <label for="iEstado">Estado</label>
+                    <input type="text" name="estado" id="iEstado" list="listEstado">
+                    <datalist id="listEstado">
+                        <option>SP</option>
+                        <option>MG</option>
+                    </datalist>
+                </div>
+                <div>
+                    <label for="iCidade">Cidade</label>
+                    <select name="cidade" id="iCidade">
+                        <option value="">------Escolha------</option>
+                        <optgroup label="SP">
+                            <option value=""> Campinas</option>
+                            <option value=""> Bernardo do Campo</option>
+                            <option value=""> São Paulo (capital)</option>
+                            <option value=""> José dos Campos</option>
+                            <option value=""> Santo André</option>
+                            <option value=""> Osasco</option>
+                            <option value=""> Ribeirão Preto</option>
+                            <option value=""> orocaba</option>
+                            <option value=""> Guarulhos</option>
+                        </optgroup>
+                        <optgroup label="MG">
+                            <option> Belo Horizonte (capital)</option>
+                            <option> Contagem</option>
+                            <option> Uberlândia</option>
+                            <option> Juiz de Fora</option>
+                            <option> Betim</option>
+                            <option> Montes claros</option>
+                            <option> Uberaba</option>
+                            <option> Itapagipe</option>
+                            <option> Sete Lagoas</option>
+                        </optgroup>
+                    </select>
                 </div>
             </fieldset>
             <fieldset>
@@ -99,6 +156,10 @@
                 <div>
                     <label for="idataprova">Data da Prova</label><br>
                     <input type="date" name="dataprova" id="idataprova">
+                </div>
+                <div>
+                    <label for="icolor">Cor:</label>
+                    <input type="color" name="color" id="icolor">
                 </div>
             </fieldset>
             <div id="botao">
