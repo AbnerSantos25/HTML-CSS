@@ -9,22 +9,87 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
+
+        form {
+            width: 280px;
+            padding: 10px;
+        }
+
+        form div {
+            margin: 3px;
+            padding: 3px;
+        }
+
+        section#Formulario {
+            background-color: rgb(255, 255, 255);
+            width: 300px;
+            margin: auto;
+        }
+
+        section>h1 {
+            text-align: center;
+        }
+
+        #botao {
+            display: flex;
+            justify-content: center;
+        }
+
+        div#botao>input {
+            margin-right: 5px;
+        }
     </style>
 </head>
 
 <body>
-    <h1>Formulario</h1>
-    <form action="cadastro.php" autocomplete="off" method="post">
-        <p>
-            <label for="inome">Nome: </label>
-            <input type="text" name="nome" id="inome">
-        </p>
-        <p>
-            <label for="isobrenome">Sobrenome:</label>
-            <input type="text" name="nome" id="isobrenome">
-        </p>
-        <p><input type="submit" value="Enviar"></p>
-    </form>
+    <section id="Formulario">
+        <h1>Formulario</h1>
+        <form action="cadastro.php" autocomplete="on" method="post">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <div>
+                    <label for="inome">Nome: </label><br>
+                    <input type="text" name="nome" id="inome" required autocomplete="username">
+                </div>
+                <div>
+                    <label for="isobrenome">Sobrenome:</label><br>
+                    <input type="text" name="sobrenome" id="isobrenome" required>
+                </div>
+                <div>
+                    <label for="iemail">E-mail: </label><br>
+                    <input type="email" name="cpf" id="iemail" autocomplete="email" placeholder="exemplo@gmail.com">
+                </div>
+                <div>
+                    <label for="itelefone">Telefone: </label>
+                    <input type="tel" name="telefone" id="itelefone" autocomplete="tel"
+                        pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required>
+                </div>
+                <div>
+                    <label for="isenha">Senha:</label><br>
+                    <input type="password" name="senha" id="isenha" required minlength="8" maxlength="16">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Dados da Prova</legend>
+                <div>
+                    <label for="icpf">Nota: </label>
+                    <input type="number" name="cpf" id="icpf" min="0" max="10" step="0.5" value="5">
+                </div>
+                <div>
+                    <label for="iperiodo">Periodo letivo</label><br>
+                    <input type="month" name="periodo" id="iperiodo" value="2024-01">
+                </div>
+                <div>
+                    <label for="idataprova">Data da Prova</label><br>
+                    <input type="date" name="dataprova" id="idataprova">
+                </div>
+            </fieldset>
+            <div id="botao">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+    </section>
 </body>
 
 </html>
