@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/*ESTILO PARA TELAS*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+header {
+    background-image: linear-gradient(90deg, #000000 62%, #499700 120%);
+}
+
+header h1 {
+    color: rgb(221, 228, 218);
+    text-align: center;
+    padding: 20px;
+}
+
+menu ul {
+    list-style-type: none;
+    background-image: linear-gradient(90deg, #499700 1%, #000000 20%);
+    padding: 10px;
+}
+
+menu li {
+    color: white;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+section article {
+    width: 600px;
+    display: block;
+    margin: auto;
+}
+
+section article h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
