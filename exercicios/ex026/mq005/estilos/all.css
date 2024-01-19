@@ -26,9 +26,31 @@ header ul {
 }
 
 header li {
-    padding: 5px;
+    padding: 10px;
     text-align: center;
     border-bottom: 1px solid rgb(0, 18, 36);
+}
+
+i#menuItem {
+    background-color: rgb(0, 0, 77);
+    display: block;
+    text-align: center;
+}
+
+i#menuItem:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+menu {
+    display: none;
+}
+
+main p {
+    text-indent: 1.5em;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 main {
@@ -36,11 +58,14 @@ main {
     margin: auto;
     width: 90vw;
     padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 main h1,
 h2 {
-    margin-top: 5px;
+    margin: 5px 20px 10px 20px;
 }
 
 main>section>article>aside aside#lado {
@@ -66,4 +91,29 @@ main>section>article>aside aside#lado div#esquerdo {
 
 main>section>article>aside aside#lado img {
     width: 100%;
+}
+
+
+
+footer {
+    background-color: rgb(1, 30, 58);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+}
+
+footer>p {
+    margin: 0px;
+}
+
+footer a {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: rgb(10, 123, 253);
 }
