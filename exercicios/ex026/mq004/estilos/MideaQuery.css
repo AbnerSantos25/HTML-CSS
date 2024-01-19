@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+
+/* telas pequenas */
+
+@media screen  and (max-width: 600px){
+    /* pequenas telas */
+}
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  /* Celulares   
+    Como ja fizemos first mobile (desenvolvemos primeiro para celulares, não precisamos adicionar nada aqui
+  */
+} 
+
+@media screen and (min-width:768px) and (max-width:992px) { /*Tablet*/
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    img#phone{ display: none;}
+    img#tablet{ display: block;}
+    img#print{ display: none;}
+    img#pc{ display: none;}
+    img#tv{ display: none;}
+} 
+@media screen and (min-width: 992px) and (max-width: 1200px){ /*Desktop*/
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    main{
+        width: 80vw;
+    }
+
+    img#phone{ display: none;}
+    img#tablet{ display: none;}
+    img#print{ display: none;}
+    img#pc{ display: block;}
+    img#tv{ display: none;}
+}
+@media screen and (min-width:1200px){ /*Grandes telas */
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    main{
+        width: 65vw;
+    }
+
+    img#phone{ display: none;}
+    img#tablet{ display: none;}
+    img#print{ display: none;}
+    img#pc{ display: none;}
+    img#tv{ display: blocks;}
+}
+
