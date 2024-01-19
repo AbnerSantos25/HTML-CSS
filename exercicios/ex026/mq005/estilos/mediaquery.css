@@ -1,0 +1,63 @@
+@charset "UFT-8";
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    main>section>article>aside aside#lado {
+        display: flex;
+    }
+
+    main>section>article>aside aside#lado div#direito {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45%;
+    }
+
+    main>section>article>aside aside#lado div#esquerdo {
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+    }
+
+    main>section>article>aside aside#lado img {}
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    main>section>article>aside aside#lado {
+        display: flex;
+    }
+
+    main>section>article>aside aside#lado div#direito {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35%;
+    }
+
+    main>section>article>aside div#esquerdo {
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    main>section>article>aside aside#lado {
+        display: flex;
+    }
+
+    main>section>article>aside aside#lado div#direito {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25%;
+    }
+
+    main>section>article>aside aside#lado div#esquerdo {
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+    }
+
+    main>section>article>aside aside#lado img {}
+}
