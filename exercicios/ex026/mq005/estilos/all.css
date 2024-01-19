@@ -5,7 +5,10 @@
     margin: 0px;
 }
 
-html {
+html,
+body {
+    width: 100vw;
+    height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(218, 217, 217);
     font-size: 1em;
@@ -108,11 +111,13 @@ main>section>article>aside aside#lado img {
 
 
 footer {
+    width: 100vw;
     background-color: rgb(1, 30, 58);
     color: white;
     text-align: center;
     padding: 10px;
     margin: 0px;
+    box-sizing: border-box;
 }
 
 footer>p {
