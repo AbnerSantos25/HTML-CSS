@@ -1,6 +1,17 @@
 @charset "UFT-8";
 
 @media screen and (min-width:768px) and (max-width:992px) {
+    header i#menuItem{
+        display: none;
+    }
+    header menu{
+        display: block;
+        text-align: center;
+    }
+    menu ul li{
+        display: inline-block;
+    }
+
     main>section>article>aside aside#lado {
         display: flex;
     }
@@ -18,7 +29,9 @@
         padding-left: 10px;
     }
 
-    main>section>article>aside aside#lado img {}
+    /* main>section>article>aside aside#lado img {
+
+    } */
 
 }
 
@@ -67,5 +80,5 @@
         padding-left: 10px;
     }
 
-    main>section>article>aside aside#lado img {}
+    /* main>section>article>aside aside#lado img {} */
 }
