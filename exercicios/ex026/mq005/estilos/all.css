@@ -21,10 +21,19 @@ body {
 }
 
 header {
-    background-image: linear-gradient(90deg, var(--cor-linearGradiente1) 62%, var(--cor-linearGradiente2) 105%);
+    /* background-image: linear-gradient(90deg, var(--cor-linearGradiente1) 62%, var(--cor-linearGradiente2) 105%); */
+    
+    background-color: black;
     color: white;
 }
+header div#banner{
+    height: 170px;
+    background-image: url(../1300-300.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
+}
 header h1 {
     text-align: center;
     padding: 10px;
