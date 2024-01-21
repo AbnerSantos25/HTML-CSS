@@ -28,7 +28,7 @@ header {
 }
 header div#banner{
     height: 170px;
-    background-image: url(../1300-300.png);
+    background-image: url(../cell.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
