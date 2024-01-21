@@ -7,15 +7,16 @@
 
 html,
 body {
-    width: 100vw;
+    width: 99vw;
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(218, 217, 217);
+    background-color: rgb(228, 241, 244);
     font-size: 1em;
 }
 
 header {
     background-color: rgb(0, 41, 80);
+    background-image: linear-gradient(90deg, rgb(0,41,80) 62%, rgb(11, 137, 255) 105%);
     color: white;
 }
 
@@ -24,26 +25,18 @@ header h1 {
     padding: 10px;
 }
 
-/* 
-
-
-
-
-documentar no notion as coisas que aprendi 
-
-
-
-
-*/
-
 header ul {
     background-color: rgb(1, 30, 58);
+    padding-right: 20px;
 }
 
 header li {
     padding: 10px;
     text-align: center;
     border-bottom: 1px solid rgb(0, 18, 36);
+}
+header li.fleft{
+    display: none;
 }
 
 i#menuItem {
@@ -61,6 +54,9 @@ i#menuItem:hover {
 menu {
     display: none;
 }
+menu li.clique{
+    background-color:rgb(0, 41, 80);
+}
 
 main p {
     text-indent: 1.5em;
@@ -69,13 +65,14 @@ main p {
 }
 
 main {
-    background-color: rgb(219, 237, 252);
+    background-color: rgb(255, 255, 255);
     margin: auto;
     width: 90vw;
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 20px;
     border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.203);
 }
 
 main h1,
@@ -84,9 +81,10 @@ h2 {
 }
 
 main>section>article>aside aside#lado {
-    background-color: rgb(182, 220, 253);
+    background-image: linear-gradient(180deg, rgb(0, 64, 125) 10%, rgb(11, 137, 255) 110%);
     padding: 10px;
     margin: 10px;
+    border-radius: 15px;
 }
 
 main>section>article>aside aside#lado div#direito {
@@ -101,6 +99,7 @@ main>section>article>aside aside#lado div#direito {
 main>section>article>aside aside#lado div#esquerdo {
     width: 100%;
     padding-top: 10px;
+    color: white;
 }
 
 
@@ -111,7 +110,7 @@ main>section>article>aside aside#lado img {
 
 
 footer {
-    width: 100vw;
+    width: 99vw;
     background-color: rgb(1, 30, 58);
     color: white;
     text-align: center;
