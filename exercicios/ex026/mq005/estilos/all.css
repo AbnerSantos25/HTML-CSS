@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-:root{
+:root {
     --cor-linearGradiente1: #DC2F02;
     --cor-linearGradiente2: #E85D04;
     --cor-header-footer: #9D0208;
@@ -22,11 +22,12 @@ body {
 
 header {
     /* background-image: linear-gradient(90deg, var(--cor-linearGradiente1) 62%, var(--cor-linearGradiente2) 105%); */
-    
+
     background-color: black;
     color: white;
 }
-header div#banner{
+
+header div#banner {
     height: 170px;
     background-image: url(../cell1.png);
     background-repeat: no-repeat;
@@ -34,6 +35,7 @@ header div#banner{
     background-position: center;
 
 }
+
 header h1 {
     text-align: center;
     padding: 10px;
@@ -48,7 +50,8 @@ header li {
     text-align: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.351);
 }
-header li.fleft{
+
+header li.fleft {
     display: none;
 }
 
@@ -67,19 +70,20 @@ i#menuItem:hover {
 menu {
     display: none;
 }
-menu li.clique{
-    background-color:var(--cor-linearGradiente2);
+
+menu li.clique {
+    background-color: var(--cor-linearGradiente2);
 }
 
-menu > ul > li.fleft:hover{
+menu>ul>li.fleft:hover {
     background-color: black;
 }
 
-ul > li > a > img#logo{
+ul>li>a>img#logo {
     width: 50px;
 }
 
-menu li a{
+menu li a {
     text-decoration: none;
     color: white;
 }
