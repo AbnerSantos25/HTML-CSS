@@ -1,9 +1,13 @@
 @charset "UTF-8";
 
 :root {
-    --cor-linearGradiente1: #DC2F02;
-    --cor-linearGradiente2: #E85D04;
     --cor-header-footer: #9D0208;
+    --cor-1: #D00000;
+    --cor-2: #DC2F02;
+    --cor-3: #E85D04;
+    --cor-4: #F48C06;
+    --cor-5: #FAA307;
+    --cor-6: #FFBA08;
 }
 
 * {
