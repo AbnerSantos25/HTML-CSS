@@ -279,6 +279,15 @@
         padding-left: 10px;
     }
 
+    .imagem-efeito {
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s ease-out;
+    }
+    .imagem-efeito:hover {
+        transform: scale(0.9); /* Ajuste o valor conforme necessário para aumentar ou diminuir o efeito */
+    }
+
     /* end ------------------------------------------------------------------- */
 
 }
