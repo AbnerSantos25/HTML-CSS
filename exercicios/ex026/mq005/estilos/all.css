@@ -148,7 +148,7 @@ main>section>article>aside aside#lado img {
 
 footer {
     width: 99vw;
-    background-color: var(--cor-linearGradiente1);
+    background-color: var(--cor-header-footer);
     color: white;
     text-align: center;
     padding: 10px;
