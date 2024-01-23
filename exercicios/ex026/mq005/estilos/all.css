@@ -32,7 +32,7 @@ header {
 }
 
 header div#banner {
-    height: 170px;
+    height: 200px;
     background-image: url(../cell1.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -97,12 +97,6 @@ menu li a {
     color: white;
 }
 
-main p {
-    text-indent: 1.5em;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
 main {
     background-color: rgb(255, 255, 255);
     margin: auto;
@@ -112,6 +106,14 @@ main {
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.203);
+    transition: width 1s, height 1s;
+    transition-timing-function: ease;
+}
+
+main p {
+    text-indent: 1.5em;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 main h1,
@@ -126,6 +128,7 @@ main>section>article>aside aside#lado {
     border-radius: 15px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.59);
     overflow: hidden;
+    transition: width 1, height 1;
 }
 
 main>section>article>aside aside#lado div#direito {

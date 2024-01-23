@@ -15,11 +15,11 @@
     header {}
 
     header div#banner {
-        height: 150px;
+        height: 200px;
         background-image: url(../1300-300.png);
         background-repeat: no-repeat;
-        background-size: cover;
-        background-position: right;
+        /* background-size: contain; */
+        background-position: center;
     }
 
     header i#menuItem {
@@ -100,10 +100,10 @@
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
     header div#banner {
-        height: 170px;
+        height: 200px;
         background-image: url(../1300-300.png);
         background-repeat: no-repeat;
-        background-size: cover;
+        /* background-size: cover; */
         background-position: right;
     }
 
@@ -189,9 +189,9 @@
 @media screen and (min-width:1200px) {
     header div#banner {
         height: 200px;
-        background-image: url(../2500-500.png);
+        background-image: url(../1300-menor.png);
         background-repeat: no-repeat;
-        background-size: 120%;
+        /* background-size: ; */
         background-position: center;
     }
 
