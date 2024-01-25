@@ -6,26 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
     <style>
-        body {
+        main{
             font-family: Arial, Helvetica, sans-serif;
-            background-image: linear-gradient(0deg, #829992, rgba(255, 255, 255, 0.219));
+            /* background-image: linear-gradient(0deg, #829992, rgba(255, 255, 255, 0.219)); */
+            box-sizing: border-box;
+            width: 100vw;
+            height: 100vh;
+        }
+        
+        section#Formulario {
+            width: 350px;
+            padding: 5px;
+            margin: auto;
+            background-color: rgb(169, 214, 199);
+            
         }
 
         form {
-            width: 320px;
-            padding: 10px;
-            background-image: linear-gradient(180deg, #829992, rgba(248, 246, 246, 0.87));
+            width: 100%;
+            /* background-image: linear-gradient(180deg, #829992, rgba(248, 246, 246, 0.87)); */
         }
 
         form div {
             margin: 3px;
             padding: 3px;
-        }
-
-        section#Formulario {
-
-            width: 300px;
-            margin: auto;
         }
 
         section>h1 {
@@ -52,132 +56,134 @@
 </head>
 
 <body>
-    <section id="Formulario">
-        <h1>Formulario</h1>
-        <form action="cadastro.php" autocomplete="on" method="post">
-            <fieldset>
-                <legend>Dados Pessoais</legend>
-                <div>
-                    <label for="inome">Nome: </label><br>
-                    <input class="w100" type="text" name="nome" id="inome" required autocomplete="username">
-                </div>
-                <div>
-                    <label for="isobrenome">Sobrenome:</label><br>
-                    <input class="w100" type="text" name="sobrenome" id="isobrenome" required>
-                </div>
-                <div>
-                    <label for="iemail">E-mail: </label><br>
-                    <input class="w100" type="email" name="cpf" id="iemail" autocomplete="email"
-                        placeholder="exemplo@gmail.com">
-                </div>
-                <div>
-                    <label for="itelefone">Telefone: </label><br>
-                    <input class="w100" type="tel" name="telefone" id="itelefone" autocomplete="tel"
-                        pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required>
-                </div>
-                <div>
-                    <fieldset>
-                        <legend>Genero</legend>
-                        <input type="radio" name="Genero" id="imas">
-                        <label for="imas">Masculino</label>
-                        <input type="radio" name="Genero" id="ifem">
-                        <label for="ifem">Feminino</label>
-                    </fieldset>
-                </div>
-                <div>
-                    <fieldset>
-                        <legend>Possui TDHA?</legend>
-                        <input type="checkbox" name="sim" id="isim"><label for="isim">Sim</label>
-                        <input type="checkbox" name="nao" id="inao"><label for="inao">Não</label>
-                        <input type="checkbox" name="naoSei" id="inaoSei"><label for="inaoSei">Não sei</label>
-                    </fieldset>
-                </div>
-                <div>
-                    <label for="ifoto">Foto de Perfil</label>
-                    <input type="file" name="foto" id="ifoto">
-                </div>
-                <div>
-                    <label for="isenha">Senha:</label><br>
-                    <input class="w100" type="password" name="senha" id="isenha" required minlength="8"
-                        maxlength="16"><br>
-                    <label for="isenhaConf">Confirmar Senha:</label><br>
-                    <input class="w100" type="password" name="senhaConf" id="isenhaConf" required minlength="8"
-                        maxlength="16">
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>Endereço</legend>
-                <div>
-                    <label for="iEstado">Estado</label>
-                    <input type="text" name="estado" id="iEstado" list="listEstado">
-                    <datalist id="listEstado">
-                        <option>SP</option>
-                        <option>MG</option>
-                    </datalist>
-                </div>
-                <div>
-                    <label for="iCidade">Cidade</label>
-                    <select name="cidade" id="iCidade">
-                        <option value="">------Escolha------</option>
-                        <optgroup label="SP">
-                            <option value=""> Campinas</option>
-                            <option value=""> Bernardo do Campo</option>
-                            <option value=""> São Paulo (capital)</option>
-                            <option value=""> José dos Campos</option>
-                            <option value=""> Santo André</option>
-                            <option value=""> Osasco</option>
-                            <option value=""> Ribeirão Preto</option>
-                            <option value=""> orocaba</option>
-                            <option value=""> Guarulhos</option>
-                        </optgroup>
-                        <optgroup label="MG">
-                            <option> Belo Horizonte (capital)</option>
-                            <option> Contagem</option>
-                            <option> Uberlândia</option>
-                            <option> Juiz de Fora</option>
-                            <option> Betim</option>
-                            <option> Montes claros</option>
-                            <option> Uberaba</option>
-                            <option> Itapagipe</option>
-                            <option> Sete Lagoas</option>
-                        </optgroup>
-                    </select>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>Dados da Prova</legend>
-                <div>
-                    <label for="icpf">Nota: </label>
-                    <input type="number" name="cpf" id="icpf" min="0" max="10" step="0.5" value="5">
-                </div>
-                <div>
-                    <label for="iperiodo">Periodo letivo</label><br>
-                    <input type="month" name="periodo" id="iperiodo" value="2024-01">
-                </div>
-                <div>
-                    <label for="idataprova">Data da Prova</label><br>
-                    <input type="date" name="dataprova" id="idataprova">
-                </div>
+    <main>
+        <section id="Formulario">
+            <h1>Formulario</h1>
+            <form action="cadastro.php" autocomplete="on" method="post">
                 <fieldset>
-                    <legend>Tipo de Prova</legend>
+                    <legend>Dados Pessoais</legend>
                     <div>
-                        <label for="iIntensidade">Intensidade</label>
-                        <input type="range" name="intensidade" value="0" id="iIntensidade" min="0" max="10"
-                            oninput="res.innerHTML = Number(iIntensidade.value)">
-                        <output id="res">0</output>
+                        <label for="inome">Nome: </label><br>
+                        <input class="w100" type="text" name="nome" id="inome" required autocomplete="username">
                     </div>
                     <div>
-                        <label for="icolor">Cor:</label>
-                        <input type="color" name="color" id="icolor">
+                        <label for="isobrenome">Sobrenome:</label><br>
+                        <input class="w100" type="text" name="sobrenome" id="isobrenome" required>
+                    </div>
+                    <div>
+                        <label for="iemail">E-mail: </label><br>
+                        <input class="w100" type="email" name="cpf" id="iemail" autocomplete="email"
+                            placeholder="exemplo@gmail.com">
+                    </div>
+                    <div>
+                        <label for="itelefone">Telefone: </label><br>
+                        <input class="w100" type="tel" name="telefone" id="itelefone" autocomplete="tel"
+                            pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>Genero</legend>
+                            <input type="radio" name="Genero" id="imas">
+                            <label for="imas">Masculino</label>
+                            <input type="radio" name="Genero" id="ifem">
+                            <label for="ifem">Feminino</label>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>Possui TDHA?</legend>
+                            <input type="checkbox" name="sim" id="isim"><label for="isim">Sim</label>
+                            <input type="checkbox" name="nao" id="inao"><label for="inao">Não</label>
+                            <input type="checkbox" name="naoSei" id="inaoSei"><label for="inaoSei">Não sei</label>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <label for="ifoto">Foto de Perfil</label>
+                        <input type="file" name="foto" id="ifoto">
+                    </div>
+                    <div>
+                        <label for="isenha">Senha:</label><br>
+                        <input class="w100" type="password" name="senha" id="isenha" required minlength="8"
+                            maxlength="16"><br>
+                        <label for="isenhaConf">Confirmar Senha:</label><br>
+                        <input class="w100" type="password" name="senhaConf" id="isenhaConf" required minlength="8"
+                            maxlength="16">
                     </div>
                 </fieldset>
-            </fieldset>
-            <div id="botao">
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Limpar">
-            </div>
-        </form>
-    </section>
+                <fieldset>
+                    <legend>Endereço</legend>
+                    <div>
+                        <label for="iEstado">Estado</label>
+                        <input type="text" name="estado" id="iEstado" list="listEstado">
+                        <datalist id="listEstado">
+                            <option>SP</option>
+                            <option>MG</option>
+                        </datalist>
+                    </div>
+                    <div>
+                        <label for="iCidade">Cidade</label>
+                        <select name="cidade" id="iCidade">
+                            <option value="">------Escolha------</option>
+                            <optgroup label="SP">
+                                <option value=""> Campinas</option>
+                                <option value=""> Bernardo do Campo</option>
+                                <option value=""> São Paulo (capital)</option>
+                                <option value=""> José dos Campos</option>
+                                <option value=""> Santo André</option>
+                                <option value=""> Osasco</option>
+                                <option value=""> Ribeirão Preto</option>
+                                <option value=""> orocaba</option>
+                                <option value=""> Guarulhos</option>
+                            </optgroup>
+                            <optgroup label="MG">
+                                <option> Belo Horizonte (capital)</option>
+                                <option> Contagem</option>
+                                <option> Uberlândia</option>
+                                <option> Juiz de Fora</option>
+                                <option> Betim</option>
+                                <option> Montes claros</option>
+                                <option> Uberaba</option>
+                                <option> Itapagipe</option>
+                                <option> Sete Lagoas</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Dados da Prova</legend>
+                    <div>
+                        <label for="icpf">Nota: </label>
+                        <input type="number" name="cpf" id="icpf" min="0" max="10" step="0.5" value="5">
+                    </div>
+                    <div>
+                        <label for="iperiodo">Periodo letivo</label><br>
+                        <input type="month" name="periodo" id="iperiodo" value="2024-01">
+                    </div>
+                    <div>
+                        <label for="idataprova">Data da Prova</label><br>
+                        <input type="date" name="dataprova" id="idataprova">
+                    </div>
+                    <fieldset>
+                        <legend>Tipo de Prova</legend>
+                        <div>
+                            <label for="iIntensidade">Intensidade</label>
+                            <input type="range" name="intensidade" value="0" id="iIntensidade" min="0" max="10"
+                                oninput="res.innerHTML = Number(iIntensidade.value)">
+                            <output id="res">0</output>
+                        </div>
+                        <div>
+                            <label for="icolor">Cor:</label>
+                            <input type="color" name="color" id="icolor">
+                        </div>
+                    </fieldset>
+                </fieldset>
+                <div id="botao">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </div>
+            </form>
+        </section>
+    </main>
 </body>
 
 </html>
