@@ -7,6 +7,7 @@ Lembrando que todas foram feito ao decorrer do mesmo, então algumas tecnicas co
 - html
 - css
 - javascript
+<br>
 
 <a href="https://abnersantos25.github.io/HTML-CSS/exercicios/ex026/mq005/index.html" target="_blank">Hamburguer</a>
 <p>Nesta atividade do curso, utilizamos o icon menu (hamburguer) para esconder a menu em dispositivos web. E tambem foi feito a responsividade com o media query.</p>
