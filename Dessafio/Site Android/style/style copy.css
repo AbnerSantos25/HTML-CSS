@@ -38,7 +38,7 @@ body {
 
 header {
     font-family: var(--fonte-destaque);
-    background-image: linear-gradient(90deg, #001e03 62%, #21d221 110%);
+    background-image: linear-gradient(90deg, var(--cor2) 62%, #b7c7b7 110%);
     /* min-width: 150px;
     max-width: 1200px; */
     margin: auto;
@@ -63,22 +63,6 @@ header>p {
     padding-bottom: 30px;
     max-width: 600px;
     text-shadow: 1px 1px 10px rgb(0, 0, 0);
-}
-
-i#menuItem {
-    background-color: var(--cor3);
-    display: block;
-    text-align: center;
-}
-
-i#menuItem:hover {
-    background-color: var(--cor3);
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-}
-
-nav {
-    display: none;
 }
 
 .navbar-inverse {
