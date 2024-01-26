@@ -2,6 +2,12 @@
 Neste repositorio você irá encontrar algumas atividades feitas dentro do curso. 
 Lembrando que todas foram feito ao decorrer do mesmo, então algumas tecnicas como Flex-box e outras novidades ainda não estão implementada neste repositorio.
 
+### 📄 O que foi usado:
+
+- html
+- css
+- javascript
+
 <a href="https://abnersantos25.github.io/HTML-CSS/exercicios/ex026/mq005/index.html" target="_blank">Hamburguer</a><br>
 <p>Nesta atividade do curso, utilizamos o icon menu (hamburguer) para esconder a menu em dispositivos web. E tambem foi feito a responsividade com o media query.</p>
 
