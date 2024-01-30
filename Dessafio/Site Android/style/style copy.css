@@ -11,13 +11,32 @@
     --cor5: #d7e6d7;
     --transparete: #ffffff00;
 }
+@media screen and (min-width:768px){
+    i#menuItem{
+        display: none;
+    }
+    main{
+        border-radius: 5px;
+    }
 
+}
 @media screen and (min-width:768px) and (max-width:992px)
 {
+    *{
+        box-sizing: border-box;
+    }
     main{
         width: 95vw;
-        margin: auto;
+        margin: 20px auto 20px auto;
     }
+
+    .navbar-inverse .navbar-nav .active a{
+        border-radius: 0px;
+    }
+    .navbar-inverse .navbar-nav .open .dropdown-menu li a{
+        color: rgb(141, 140, 140);
+        font-size: 1.5em;
+    } 
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
