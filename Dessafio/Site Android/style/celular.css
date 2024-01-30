@@ -109,7 +109,7 @@ i#menuItem{
 
 .navbar-inverse .navbar-nav .open .dropdown-menu li a{
     color: rgb(219, 216, 216);
-    font-size: 1em;
+    font-size: 1em; 
 } 
 
 .navbar-inverse .navbar-nav .open .dropdown-menu li a:hover{
@@ -145,8 +145,8 @@ h2 {
     padding-left: 10px;
     border-radius: 5px;
     font-family: var(--fonte-android);
-    background-image: linear-gradient(90deg, var(--cor2), #ffffff);
-    color: var(--cor-padrao);
+    background-image: linear-gradient(90deg, var(--cor2) 70%, #ffffff 100%);
+    color: rgb(42, 43, 42);
 }
 
 main p {
