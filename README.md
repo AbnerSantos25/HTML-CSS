@@ -6,7 +6,7 @@ Lembrando que todas foram feito ao decorrer do mesmo, então algumas tecnicas co
 
 - html
 - css
-- javascript
+- javascript (basico apenas para implementar o meno em telas pequenas em algumas pages)
 <br>
 
 <a href="https://abnersantos25.github.io/HTML-CSS/exercicios/ex026/mq005/index.html" target="_blank">Hamburguer</a>
