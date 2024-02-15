@@ -12,8 +12,9 @@
 }
 
 @media screen and (min-width:768px) and (max-width:992px) {
-    header {}
-
+    body{
+        font-size: 1.2em;
+    }
     header div#banner {
         height: 200px;
         background-image: url(../1300-300.png);
@@ -99,6 +100,9 @@
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
+    body{
+        font-size: 1.5em;
+    }
     header div#banner {
         height: 200px;
         background-image: url(../1300-300.png);
@@ -187,8 +191,11 @@
 }
 
 @media screen and (min-width:1200px) {
+    body{
+        font-size:1.8em ;
+    }
     header div#banner {
-        height: 200px;
+        height: 380px;
         background-image: url(../1300-menor.png);
         background-repeat: no-repeat;
         /* background-size: ; */

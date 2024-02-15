@@ -129,6 +129,7 @@ main>section>article>aside aside#lado {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.59);
     overflow: hidden;
     transition: width 1, height 1;
+    transition-timing-function: ease
 }
 
 main>section>article>aside aside#lado div#direito {
@@ -149,9 +150,16 @@ main>section>article>aside aside#lado div#esquerdo {
 
 main>section>article>aside aside#lado img {
     width: 100%;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px var(--cor-4);
+    border-radius: 7px;
+    box-shadow: 0px 0px 12px var(--cor-3);
 }
+
+
+main>section>article>aside aside#lado img:hover {
+    box-shadow: 0px 0px 30px var(--cor-4);
+    transition: 1s;
+}
+
 
 
 
