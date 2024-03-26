@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos/allPizza.css">
+    <!-- <link rel="stylesheet" href="./estilos/mediaqueryPizza.css"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Adicione a biblioteca Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <title>Pizzas</title>
+    <style>
+    </style>
+</head>
+<body>
+    <header>
+        <div id="banner">
+            <h1>Pizzas</h1>
+            <p>Tamanho Familia</p>
+        </div>
+        <i id="menuItem" class="material-icons" onclick="menuclick()">menu</i>
+        <menu id="item" style="
+        display: none;">
+            <ul>
+                <li class="fleft"> <a href="#"> Hamburgueria Gourmet </a> </li>
+                <li class="clique fright" id="esquerda"><a href="./index.html">Hamburger</a></li>
+                <li id="pizza" class="fright"><a href="./pizza.html"> Pizza</a></li>
+                <li id="direita" class="fright"><a href="#">Porções</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <div id="banner">
+                <div id="bannerInicial">
+                    <img src="./img/cara pizza png.png" alt="">
+                    <h1>Não Perca tempo!</h1>
+                    <p>
+                        Informe seu endereço para encontrarmos a loja mais próxima de você
+                    </p>
+                </div>
+            </div>
+            
+        </article>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        function menuclick(){
+            let item = document.getElementById('menuItem');
+            let lista = document.getElementById('item');
+            if(lista.style.display == 'none'){
+                lista.style.display = 'flex';
+            }else{
+                lista.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -57,7 +57,7 @@
     }
 
     menu ul li#meio:hover {
-        transform: translate(0px, 20px);
+        transform: translate(-20px);
         transition: transform 1s;
         box-shadow: 0px 5px 10px rgb(1, 30, 58);
     }
@@ -145,7 +145,7 @@
     }
 
     menu ul li#meio:hover {
-        transform: translate(0px, 20px);
+        transform: translate(-20px);
         transition: transform 1s;
         box-shadow: 0px 5px 10px rgb(1, 30, 58);
     }
@@ -236,7 +236,7 @@
     }
 
     menu ul li#meio:hover {
-        transform: translate(0px, 20px);
+        transform: translate(-20px);
         transition: transform 1s;
         box-shadow: 0px 5px 10px rgb(1, 30, 58);
     }

@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+:root {
+    --cor-header-footer: #9D0208;
+    --cor-1: #D00000;
+    --cor-2: #DC2F02;
+    --cor-3: #E85D04;
+    --cor-4: #F48C06;
+    --cor-5: #FAA307;
+    --cor-6: #FFBA08;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html,
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(225, 227, 227);
+    font-size: 1em;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(23, 23, 23);
+    background-image: url(../img/fundoPizza.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+header {
+    /* background-image: linear-gradient(90deg, var(--cor-linearGradiente1) 62%, var(--cor-linearGradiente2) 105%); */
+    background-image: linear-gradient(180deg, #000000 25%, #ff0000 40%, #000000 90%);
+    color: white;
+    text-align: center;
+}
+header div#banner{
+    width: 100vw;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    border-bottom: #cf0707 5px solid;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+header div#banner h1{
+    color:#ffffffe6;
+    margin: auto;
+}
+header div#banner p{
+    margin: auto;
+    color:  #c90b11;
+    
+}
+
+header menu{
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 10px 0px;
+    width: 100vw;
+    margin: 0 auto;
+}
+header menu li{
+    display: inline;
+    margin: 0px 10px;
+}
+header menu li > a{
+    text-decoration: none;
+    color:white;
+}
+header li#pizza{
+    display: none;
+}
+article{
+    display: flex;
+    justify-content: center;
+    
+}
+
+article div#banner{
+    display: flex;
+    width: 100vw;
+    height: 175px;
+    background-image: linear-gradient(180deg, #000000 70%, #00000025 85%, #04040416 20%);
+    justify-content: center;
+}
+article div#bannerInicial{
+    position: relative;
+    top: 40px;
+    width: 60vw;
+    height: 200px;
+    background-color: rgb(234, 229, 229);
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 5px 15px 1px #8f8f8fd7;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transition: 1s;
+}
+/* article div#bannerInicial:hover{
+    box-shadow: 0px 5px 15px 1px #ff0000d7;
+} */
+  @keyframes example {
+    0%   {box-shadow: 0px 5px 15px 1px red; left:0px; top:0px;}
+    25%  {box-shadow: 0px 5px 15px 1px rgb(222, 62, 62); left:25px; top:0px;}
+    50%  {box-shadow: 0px 5px 15px 1px rgb(255, 140, 0); left:25px; top:25px;}
+    75%  {box-shadow: 0px 5px 15px 1px rgb(255, 30, 0); left:0px; top:25px;}
+    100% {box-shadow: 0px 5px 15px 1px rgb(41, 1, 1); left:0px; top:0px;}
+  }
+article div#bannerInicial h1{
+    margin-top: 12%;
+    padding-bottom: 10px;
+}
+article h1, p{
+    margin-left: 140px;
+}
+
+article div#bannerInicial img{
+    position: absolute;
+    transition: 1s;
+    top: -41px;
+    left: -55px;
+    width: 58%;
+}
+
