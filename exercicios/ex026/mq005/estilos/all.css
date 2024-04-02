@@ -33,7 +33,7 @@ header {
 
 header div#banner {
     height: 200px;
-    background-image: url(../cell1.png);
+    background-image: url(../img/cell1.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

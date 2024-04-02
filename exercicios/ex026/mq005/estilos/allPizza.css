@@ -99,7 +99,7 @@ article div#banner{
 article div#bannerInicial{
     position: relative;
     top: 40px;
-    width: 60vw;
+    width: 380px;
     height: 200px;
     background-color: rgb(234, 229, 229);
     border-radius: 20px;
@@ -134,6 +134,6 @@ article div#bannerInicial img{
     transition: 1s;
     top: -41px;
     left: -55px;
-    width: 58%;
+    width: 65.3%;
 }
 

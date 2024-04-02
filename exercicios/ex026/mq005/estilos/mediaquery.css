@@ -17,7 +17,7 @@
     }
     header div#banner {
         height: 200px;
-        background-image: url(../1300-300.png);
+        background-image: url(../img/1300-300.png);
         background-repeat: no-repeat;
         /* background-size: contain; */
         background-position: center;
@@ -105,7 +105,7 @@
     }
     header div#banner {
         height: 200px;
-        background-image: url(../1300-300.png);
+        background-image: url(../img/1300-300.png);
         background-repeat: no-repeat;
         /* background-size: cover; */
         background-position: right;
@@ -196,7 +196,7 @@
     }
     header div#banner {
         height: 380px;
-        background-image: url(../1300-menor.png);
+        background-image: url(../img/1300-menor.png);
         background-repeat: no-repeat;
         /* background-size: ; */
         background-position: center;
